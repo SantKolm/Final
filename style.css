@@ -120,27 +120,31 @@ section{
     animation-direction: alternate;
 }
 
-@keyframes up-down{
-    from{transform: translateY(0px);}
-    to{transform: translateY(50px);}
-}
-
 .title{
     padding-top: 100px;
-    margin: auto;
+    text-align: center;
     color:#fff;
     font-size: 80px;
-    box-shadow: 5px 5px 0 black;
+    text-shadow: 5px 5px 0 black;
 }
 
 .about-content{
-    width: 35%;
-    height: 270px;
-    padding: 40px 0 0 40px;
-    background-color: #792AFF;
+    width: 45%;
+    height: 450px;
     position: relative;
-    border-radius: 0 0 0 20px;
+    align-items: center;
     display: flex;
+}
+
+.about-text{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    background-color: #792AFF;
+    border-radius: 10px 0 0 10px;
 }
 
 .about-title{
@@ -149,4 +153,106 @@ section{
     max-width: 463px;
     margin-bottom: 20px;
     font-family: "Comfortaa";
+}
+
+.about-card{
+    background-image: url("img/form2.png");
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.about-card p{
+    color: #000000;
+    font-size: 17px;
+    justify-content: flex-start;
+    margin-left: 20px;
+    line-height: 25px;
+    font-family: "Comfortaa";
+}
+
+.about-card img{
+    margin-bottom: 20px;
+}
+
+.cloud{
+    position: absolute;
+    right: 20px;
+    rotate: 186deg;
+    top: 250px;
+}
+
+.moving-cloud{
+    background: url("img/cloud.png");
+    background-repeat:  no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: up-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.skills-card{
+    background-image: url("img/form3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 30px;
+    border: #000000 solid 2px;
+    height: 450px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 400px;
+    font-family: "Comfortaa";
+}
+
+.planet2{
+    position: absolute;
+    right: 20px;
+    top: 250px;
+}
+
+.moving-planet2{
+    background: url("img/moving-planet2.png");
+    background-repeat:  no-repeat;
+    width: 200px;
+    height: 230px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    animation-name: up-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up-down{
+    from{transform: translateY(0px);}
+    to{transform: translateY(50px);}
 }
