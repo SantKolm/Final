@@ -1,7 +1,60 @@
 * {
     margin: 0;
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
 
+.active{
+    background-color: #BBFF2C;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+
+.nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px ;
+    background-color: white;
+    transition-duration: 0.3s;
+}
+
+.nav-link:hover{
+    background-color: #BBFF2C;
+    transform:translateY(-10px);
+}
+
+.logo{
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
 }
 
 section{
@@ -303,13 +356,13 @@ section{
     align-items: center;
 }
 
-.comment-card h3{
+.comments-card h3{
     font-size: 18px;
     font-family: "Comfortaa";
     padding: 10px;
 }
 
-.comment-card p{
+.comments-card p{
     font-size: 14px;
     font-family: "comfortaa";
     padding: 10px 20px;
