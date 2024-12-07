@@ -52,7 +52,7 @@ window.onscroll = function() {
 }
 
 document.querySelector(".mobile-button").addEventListener("click", function(event){
-    document.querySelector(".moblie-menu").classList.toggle("hide")
+    document.querySelector(".mobile-menu").classList.toggle("hide")
 })
 
 
